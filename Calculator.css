@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.C-Container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./Images/math.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.C-CalculatorDIV{
+    width: 70%;
+    height: 80%;
+    border-radius: 30px;
+    background-color: #515151;
+    border: 4px black solid;
+}
+.C-ResultDIV{
+    height: 30%;
+    width: 100%;
+    background-color: #999;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.C-Result{
+    height: 78%;
+    width: 95%;
+    padding-left: 1%;
+    background-color: white;
+    border-radius: 10px;
+    outline: none;
+    border: 4px black solid;
+    font-size: 80px;
+}
+.C-ButtonsDIV{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.C-NumbersButtonsDIV{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 30px;
+}
+.C-Numbersrow{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 25%;
+}
+.C-1to9btn{
+    height: 100%;
+    width: 33.33%;
+    font-size: 40px;
+    outline: none;
+}
+.C-0btn{
+    height: 100%;
+    width: 100%;
+    border-bottom-left-radius: 30px;
+    font-size: 40px;
+    outline: none;
+}
+.C-OperationsButtonsDIV{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom-right-radius: 30px;
+}
+.C-Operationsrow{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 25%;
+}
+.C-OperationBtn{
+    height: 100%;
+    width: 25%;
+    font-size: 40px;
+    outline: none;
+}
+.C-DelButton{
+    height: 100%;
+    width: 25%;
+    font-size: 40px;
+    outline: none;
+    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+    -moz-transform: matrix(-1, 0, 0, 1, 0, 0);
+    -o-transform: matrix(-1, 0, 0, 1, 0, 0);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.C-OperationequalBtn{
+    height: 100%;
+    width: 50%;
+    font-size: 40px;
+    outline: none;
+    border-bottom-right-radius: 30px;
+}
