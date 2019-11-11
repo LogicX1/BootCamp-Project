@@ -2,6 +2,28 @@ body{
     margin: 0;
     padding: 0;
 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+  }
+  
+ 
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    padding: 30px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111111;
+  }
 .C-Container{
     width: 100%;
     height: 100%;
@@ -11,6 +33,18 @@ body{
     background-image: url("./Images/math.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+}
+.Side-Bar{
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #333333;
+    overflow-x: hidden;
+    padding-top: 20px;
+
 }
 .C-CalculatorDIV{
     width: 70%;
