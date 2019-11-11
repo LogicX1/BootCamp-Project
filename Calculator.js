@@ -47,6 +47,10 @@ function cubeRoot(){
     document.inputForm.Display.value = Math.pow(exp,1/3);
 }
 
+
+
+
+
 function factorial(){
     
     let exp = document.inputForm.Display.value;
