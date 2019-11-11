@@ -1,0 +1,65 @@
+<html>
+<head>
+    <script src="Calculator.js"></script>
+    <link rel="stylesheet" type="text/css" href="Calculator.css" />
+</head>
+<body>
+    <div class="C-Container">
+        <div class="C-CalculatorDIV">
+            <div class = "C-ResultDIV">
+                <form  id="displayForm" name="inputForm">
+                <input class = "C-Result" name="Display"></input>
+                </form>
+            </div>
+            <div class = "C-ButtonsDIV">
+                <div class = "C-NumbersButtonsDIV">
+                    <div class="C-Numbersrow">
+                        <button onclick="insert(1)" class="C-1to9btn">1</button>
+                        <button onclick="insert(2)" class="C-1to9btn">2</button>
+                        <button onclick="insert(3)" class="C-1to9btn">3</button>
+                    </div>
+                    <div class="C-Numbersrow">
+                        <button onclick="insert(4)" class="C-1to9btn">4</button>
+                        <button onclick="insert(5)" class="C-1to9btn">5</button>
+                        <button onclick="insert(6)" class="C-1to9btn">6</button>
+                    </div>
+                    <div class="C-Numbersrow">
+                        <button onclick="insert(7)" class="C-1to9btn">7</button>
+                        <button onclick="insert(8)" class="C-1to9btn">8</button>
+                        <button onclick="insert(9)" class="C-1to9btn">9</button>
+                    </div>
+                    <div class="C-Numbersrow">
+                        <button onclick="insert(0)" class="C-0btn">0</button>
+                    </div>
+                </div>
+                <div class = "C-OperationsButtonsDIV">
+                    <div class="C-Operationsrow">
+                        <button onclick="insert('+')" class="C-OperationBtn">+</button>
+                        <button onclick="del()" class="C-OperationBtn">CE</button>
+                        <button onclick="resetDisplay()" class="C-OperationBtn">C</button>
+                        <button onclick="del()" class="C-DelButton">&#10148</button>
+                    </div>
+                    <div class="C-Operationsrow">
+                        <button onclick="insert('-')" class="C-OperationBtn">-</button>
+                        <button onclick="square()" class="C-OperationBtn">x²</button>
+                        <button onclick="cube()" class="C-OperationBtn">x&#xb3</button>
+                        <button onclick="factorial()" class="C-OperationBtn">n!</button>
+                    </div>
+                    <div class="C-Operationsrow">
+                        <button onclick="insert('*')" class="C-OperationBtn">*</button>
+                        <button onclick="insert('%')" class="C-OperationBtn">%</button>
+                        <button onclick="squareRoot()" class="C-OperationBtn">√x</button>
+                        <button onclick="cubeRoot()" class="C-OperationBtn">&#x221bx</button>
+
+                    </div>
+                    <div class="C-Operationsrow">
+                        <button onclick="insert('/')" class="C-OperationBtn">/</button>
+                        <button onclick="insert('.')" class="C-OperationBtn">.</button>
+                        <button onclick="equal()" class="C-OperationequalBtn">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
