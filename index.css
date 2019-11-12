@@ -2,7 +2,6 @@ body{
     margin: 0;
     padding: 0;
 }
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -11,15 +10,13 @@ ul {
     background-color: #333333;
   }
   
-  li {
-    float: left;
-  }
+ 
   
   li a {
     display: block;
     color: white;
-    text-align: center;
-    font-size: 40px;
+    text-align: left;
+    font-size: 20px;
     padding: 30px;
     text-decoration: none;
   }
@@ -28,12 +25,63 @@ ul {
     background-color: #111111;
   }
 
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 33px;
+}
 .index-Container {
     width: 100%;
     height: 100%;
-    background-image: url("./Images/Background.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./Images/Background-Lemons.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+.Side-Bar{
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #333333;
+    overflow-x: hidden;
+    padding-top: 20px;
 
+}
+
+.Profile {
+    width: 80%;
+    height: 100%;
+    margin-top: 3%;
+    
+}
+.Profile-pic {
+    width: 35%;
+    height: 28%;
+    margin-top: 18px;
+    margin-left: 12px;
+    font-size: 28px;
+    
+}
+.Profile-Header {
+    margin-left: 15px;
+    color: solid brown;
+
+}
+.Profile-Description {
+    width: 80%;
+    height: 50%;
+    margin-left: 22px;
+    font-size: 29px;
+    color: solid black;
+}
+
+.Right-Side-Paragraph {
+    display: flex;
+    display: inline;
+}
