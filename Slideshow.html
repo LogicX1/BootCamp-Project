@@ -8,36 +8,67 @@
 </head>
 
 <body>
-    <div class="SS-Container">
-        <div class="SS-HomeButtonDiv">
-                <ul>
-                        <li><a href="https://logicx1.github.io/BootCamp-Project/index.html">Home</a></li>
-                        <li><a href="https://www.codewars.com/users/LogicX1">Codewars</a></li>
-                        <li><a href="https://github.com/LogicX1/BootCamp-Project">Github</a></li>
-                        <li><a href="https://www.freecodecamp.org/logicx1">freecodecamp</a></li>
-                        <li><a href="https://logicx1.github.io/BootCamp-Project/Calculator.html">Calculator</a></li>
-                        <li><a href="https://logicx1.github.io/BootCamp-Project/Slideshow.html">Image carousel</a></li>
-            </ul>
-        </div>
-        <div class="SS-MainContent">
-            <div class="SS-SlideDIV">
-                <div class="mySlides1 ">
-                    <div class="SS-Image1"></div>
-                </div>
-
-                <div class="mySlides1">
-                    <div class="SS-Image2" ></div>
-                </div>
-
-                <div class="mySlides1">
-                    <div class="SS-Image3" ></div>
-                </div>
-                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+    <div id="Main" class="SS-Container">
+            <div class="Side-Bar">
+                    <ul>
+                                <li><a href="https://logicx1.github.io/BootCamp-Project/index.html">Home</a></li>
+                                <li><a href="https://www.codewars.com/users/LogicX1">Codewars</a></li>
+                                <li><a href="https://github.com/LogicX1/BootCamp-Project">Github</a></li>
+                                <li><a href="https://www.freecodecamp.org/logicx1">freecodecamp</a></li>
+                                <li><a href="https://logicx1.github.io/BootCamp-Project/Calculator.html">Calculator</a></li>
+                                <li><a href="https://logicx1.github.io/BootCamp-Project/Slideshow.html">Image carousel</a></li>
+                    </ul>
             </div>
-            <div class="SS-DescriptionBox"></div>
-        </div>
+        <div id="slider">
+                <div id="box">
+                    <img src="./Images/1.jpg">
+                </div>
+        
+                
+                <button class="prev" onclick="prevImage()">-</button>
+                <button class="next" onclick="nextImage()">+</button>
+            </div>
     </div>
+    <script type="text/javascript">
+
+
+        var slider_content = document.getElementById('box');
+  
+    
+      var image = ['1','2', '3', '4'];
+  
+      var i = image.length;
+  
+  
+     
+  
+      function nextImage(){
+          if (i<image.length) {
+              i= i+1;
+          }else{
+              i = 1;
+          }
+            slider_content.innerHTML = "<img src=./Images/"+image[i-1]+".jpg>";
+      }
+  
+  
+ 
+  
+      function prevImage(){
+  
+          if (i<image.length+1 && i>1) {
+              i= i-1;
+          }else{
+              i = image.length;
+          }
+            slider_content.innerHTML = "<img src=./Images/"+image[i-1]+".jpg>";
+  
+      }
+  
+    
+
+  
+    </script>
 </body>
 
 </html>
